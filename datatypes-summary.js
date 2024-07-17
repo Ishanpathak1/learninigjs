@@ -26,3 +26,29 @@ let myObj={
 const myFunction=function(){
     console.log("Hello World");
 }
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// How does memory works in Java Script
+// Two types of memory : Stack and Heap
+// Stack (Primitve), Heap (Non-Primitive)
+
+let myYoutubename="ishanpathak96"
+let anotherName= "IshanPathak2711"
+console.log(anotherName)
+console.log(myYoutubename)
+
+//above is the example of stack memory
+
+let userOne = {
+    email:"user@google.com",
+    upi:"ishanpathak@okaxis"
+}
+
+let userTwo = userOne
+
+userTwo.email = "ishan@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
+//above is the example of heap memory
