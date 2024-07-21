@@ -69,3 +69,22 @@ console.log(Object.entries(tinderUser))
 
 console.log(tinderUser.hasOwnProperty("isLoggedIn"))
 console.log(tinderUser.hasOwnProperty("isLoggedn"))
+
+const course ={
+    coursename : "JS In Hindi",
+    price : "999",
+    courseInstructor :"Hitesh",
+}
+
+const {courseInstructor} =course
+const {price} =course
+
+console.log(courseInstructor)
+console.log(price);
+
+//concept of API
+//{
+//    name:"Ishan",
+//    coursename: "js in hindi",
+//    price : "free"
+//}
