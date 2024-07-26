@@ -25,3 +25,25 @@ const emptyObj ={}
 if (Object.keys(emptyObj).length===0){
     console.log("Object is empty");
 }
+
+//Nullish Coalescing Operator (??) : null undefined
+
+let val1;
+//val1 = 5 ?? 10 // Output is 5 
+//val1 = null??10 // Output is 10
+// in this case it is 10,but in production it will be something like a complex function which will return a value
+// but if there is no value it will pass the null
+
+//val1 = undefined ?? 15
+
+val1 = null??10??15 //Output will be 10, so it will always print the first value
+
+
+console.log(val1); 
+
+// Terniary Operator
+
+//condition ? true : false
+
+const coldCoffeePrice =70
+coldCoffeePrice >=80 ? console.log("less than 80") : console.log("greater than 80");
