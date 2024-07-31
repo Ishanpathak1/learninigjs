@@ -3,11 +3,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom learning</title>
+    <style>
+        .bg-black {
+            background-color: #212121;
+            color:#fff;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-black">
     <div class="bg-black">
-        <h1 class="heading">Dom learning from Chai aur Code</h1>
+        <h1 style= "color: blue;"id= "title" class="heading">Dom learning from Chai aur Code</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
     </div>
 </body>
 </html>
+
+<!-- document.getElementById('title').id, output will be title -->
+<!-- document.getElementById('title').class, this won't work -->
+<!-- document.getElementById('title').className, output will be heading --> 
+<!-- document.getElementById('title').getAttribute('class'), output will be heading -->
+<!-- document.getElementById('title').getAttribute('id'), output will be title -->
+<!-- document.getElementById('title').setAttribute('class','test'), output will be undefined, but this will get reflected , and it will always over write --> 
+
+<!-- title.style.backgroundColor='green', this will set the green --> 
