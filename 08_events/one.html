@@ -31,9 +31,32 @@
     // clientX,clientY,screenX,screenY
     // altkey,ctrlkey,shiftkey,keycode
 
-    document.getElementById('images').addEventListener('click', function(e){
+   // document.getElementById('images').addEventListener('click', function(e){
+   //     console.log('clicked inside the ul')
+   // },false)
+   // document.getElementById('owl').addEventListener('click', function(e){
+  //      console.log('owl clicked')
+  //      e.stopPropagation()// it will stop bubbling
+  //  },false) // if they are falso, first owl clicked will come, and if true then vice -versa
+
+  //  document.getElementById('google').addEventListener('click', function(e){
+  //      e.preventDefault()
+  //      e.stopPropagation()
+  //      console.log('Google clicked');
         
-    },false)
+    //})
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName ==='IMG') {
+            console.log(e.target.id);
+            let removeIt=e.target.parentNode
+            removeIt.remove()
+        }
+
+        let removeIt= e.target.parentNode
+        removeIt.remove()
+    })
 
 
 </script>
