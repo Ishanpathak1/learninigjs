@@ -24,3 +24,12 @@ new Promise( function (resolve, reject){
 })
 
 //Video 40- 19:26
+const promiseThree = new Promise(function(resolve,reject){
+    setTimeout(() => {
+       resolve({username:"Ishan", email:"ishan.pathak2711@gmail.com"}) 
+    }, 1000);
+})
+
+promiseThree.then(function(user){
+    console.log(user)
+})
