@@ -33,3 +33,24 @@ const promiseThree = new Promise(function(resolve,reject){
 promiseThree.then(function(user){
     console.log(user)
 })
+
+const promiseFour = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        let error=true;
+        if (!error) {
+            resolve({username:"Ishan", password:"123"})
+        } else {
+            reject('Error: Something went wrong')
+        }
+    },1000)
+})
+
+promiseFour.then((user)=>{
+    console.log(user);
+    return user.username
+}).then(function(username){
+    console.log(username);
+}).catch((error)=>{
+    console.log(error);
+})// this is known as chaining
+
