@@ -52,5 +52,5 @@ promiseFour.then((user)=>{
     console.log(username);
 }).catch((error)=>{
     console.log(error);
-})// this is known as chaining
+}).finally(()=>{console.log("The promise is either resolved or rejected");})// this is known as chaining
 
