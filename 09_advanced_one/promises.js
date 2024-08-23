@@ -54,3 +54,20 @@ promiseFour.then((user)=>{
     console.log(error);
 }).finally(()=>{console.log("The promise is either resolved or rejected");})// this is known as chaining
 
+const promiseFive =new Promise(function(resolve,reject){
+    setTimeout(function(){
+        let error=true
+        if(!error) {
+            resolve({username:"Javascript", password:"123"})
+        } else {
+            reject('Error: JS went wrong')
+        }
+    },1000)
+});
+
+async function consumePromiseFive(){
+    const response = await promiseFive
+    console.log(response);
+}
+
+consumePromiseFive()
