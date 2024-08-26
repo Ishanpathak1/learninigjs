@@ -97,3 +97,4 @@ fetch('https://jsonplaceholder.typicode.com/users')
 .catch((error)=> console.log(error))
 
 //will start learning about fetch
+//completed about the fetch - if you get the time watch the video number 41 again
