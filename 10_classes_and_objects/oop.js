@@ -28,3 +28,5 @@ const userOne = new User ("IshanPathak",27,true)
 const userTwo =new User ("Dushyant",30,true) // value got overwritten right?, that's why we have to use the "new" keyword
 console.log(userOne);
 console.log(userTwo);
+
+//Prototype is a difficult topic, should be done at a good time, still theory is done today, will be uploading the code tomorrow
