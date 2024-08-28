@@ -24,3 +24,8 @@ Inheritance
 Polymorphism
 
 # Javascript is a prototype based language.
+
+## Javascript doesn't give up until null is not fined atleast, it's prototype behaviour.
+## Yaha Nai mila to aur upar.
+### Open Console to understand from the video number 43
+### Array/String ---------> Object --------> Null
