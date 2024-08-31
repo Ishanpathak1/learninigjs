@@ -53,7 +53,7 @@ Object.setPrototypeOf(TeachingSupport,teacher)
 let anotherUsername = "IshanAndCoffee       "
 String.prototype.trueLength = function() {
     console.log(`${this}`); //to see the access of this
-    console.log(`True lenght of the name is ${this.trim().length}`);
+    console.log(`True length of the name is ${this.trim().length}`);
 }
 
 anotherUsername.trueLength()
