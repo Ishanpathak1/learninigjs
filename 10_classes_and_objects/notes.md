@@ -29,3 +29,8 @@ Polymorphism
 ## Yaha Nai mila to aur upar, matlab parent, phir grandparent, dhundega javascript, ise kehte hain prototype behaviour.
 ### Open Console to understand from the video number 43
 ### Array/String ---------> Object --------> Null
+
+
+# learning call,bind and this
+## There is a call stack, where execution takes place.
+## This keyword give you current context, by default it is...., check video 44 for this
