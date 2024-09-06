@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure and Chai</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function init(){
+        let name = "Mozilla";
+
+        function displayName() {
+            console.log(name);
+            
+        }
+        displayName();
+    }
+    init();
+
+    function outer(){
+        let username ="Ishan"
+        function inner() {
+            console.log("inner",username); // this is available
+            
+        }
+        inner()
+    }
+    outer()
+    console.log("Too Outer",username);// this is not available
+    
+</script>
+</html>
