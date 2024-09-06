@@ -21,4 +21,5 @@ class user {
 const Ishan = new user ("I@google.com", "abc")
 console.log(Ishan.password);
 console.log(Ishan.email);
+//made few changes.
 
