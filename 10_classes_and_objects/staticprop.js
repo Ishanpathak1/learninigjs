@@ -27,3 +27,4 @@ class Teacher extends User {
 
 const iPhone = new Teacher ("iphone", "iphone@apple.com")
 console.log(iPhone.createUniqueID()); // see not able to access because of the kewyord "Static"
+//Javascript ended with a story, let's make a project now.
